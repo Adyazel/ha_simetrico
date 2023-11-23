@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_sat.css">
+    <title>Sat</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <main>
+            <div class="hoja-form">
+                <form method="POST" action="registerapi.php">
+                    <label for="pass2">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="correo">Correo:</label>
+                    <input type="email" name="correo" id="correo">
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" name="pass" id="pass">
+                    <label for="pass2">Repetir Contraseña:</label>
+                    <input type="password" name="pass2" id="pass2">
+                    <div>
+                        <input type="checkbox" name="pri" id="pri">
+                        <label for="pri">Acepto los <a href="terminos.pdf">terminos y Condiciones</a>.</label>
+                    </div>
+                    <input type="submit" id="submitb" name="submitb" value="validar">
+                       <!-- <button onclick="validar_efirma()">validar</button> -->
+                </form>
+                
+            </div>
+        </main>
+    </div>
+
+
+
+
+    <script src="functions.js"></script>
+</body>
+</html>

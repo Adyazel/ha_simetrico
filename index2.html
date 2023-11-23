@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_sat.css">
+    <title>Sat</title>
+</head>
+<body>
+    <nav>
+        <div class="content-izq">
+            <div class="cont-arr">
+                <div>
+                    <img class="bandera mexico" width="100%" height="50px" src="Flag.png" alt="bandera">
+                </div>
+                <div class="redes">
+                    <h6>redes sociales</h6>
+                   <div class="redes-cont">
+                     <img src="facebook.png" alt="facebook">
+                     <img src="tiktok.jpg" alt="tiktok">
+                     <img src="twitter.png" alt="x">
+                     <img src="insta.png" alt="insta">
+                   </div>
+                </div>
+            </div>
+
+
+            <div class="cont-aba">
+                <div>
+                    <img src="logos.jpeg" alt="logos">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="content-der">
+            <div class="buscador-cont">
+                <input type="text" name="buscador" id="buscador" >
+
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <main>
+            <div class="hoja-form">
+                <form method="POST" action="validacion.php" id="form_ini">
+                    <label for="correo">Correo:</label>
+                    <input type="email" name="correo" id="correo">
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" name="pass" id="pass">
+                    <input type="submit" id="submitb" name="submitb" value="validar">
+                       <!-- <button onclick="validar_efirma()">validar</button> -->
+                </form>
+                
+            </div>
+        </main>
+    </div>
+
+
+
+
+    <script src="functions.js"></script>
+</body>
+</html>

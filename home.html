@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_sat.css">
+    <link rel="stylesheet" href="Glider.js-master/glider.min.css">
+    <title>Sat - inicio</title>
+</head>
+<body>
+    <nav>
+        <div class="content-izq">
+            <div class="cont-arr">
+                <div>
+                    <img class="bandera mexico" width="100%" height="50px" src="Flag.png" alt="bandera">
+                </div>
+                <div class="redes">
+                    <h6>redes sociales</h6>
+                   <div class="redes-cont">
+                     <img src="facebook.png" alt="facebook">
+                     <img src="tiktok.jpg" alt="tiktok">
+                     <img src="twitter.png" alt="x">
+                     <img src="insta.png" alt="insta">
+                   </div>
+                </div>
+            </div>
+
+
+            <div class="cont-aba">
+                <div>
+                    <img src="logos.jpeg" alt="logos">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="content-der">
+            <div class="buscador-cont">
+                <input type="text" name="buscador" id="buscador" >
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="hoja-carrucel">
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="anterior" class="caruosel__anterior"></button>
+                        <div class="carousel__lista">
+                            <div class="carousel__elemento">
+                                <center>
+                                    <img src="img1.jpeg" alt="imagen">
+                                </center>
+                            </div>
+                            <div class="carousel__elemento">
+                                <center>
+                                    <img src="img2.jpeg" alt="imagen">
+                                </center>
+                            </div>               
+                        </div>
+                    <button aria-label="siguiente" class="caruosel__seguiente"></button>
+                </div>
+                <div role="tablist" class="carousel__indicadores"> </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Glider.js-master/glider.min.js"></script>
+    <script>
+        window.addEventListener('load', function(){
+            new Glider(document.querySelector('.carousel__lista'),{
+                slidesToShow: 1,
+                slidesToScroll: 5,
+                draggable: true,
+                dots: '.carousel__indicadores',
+                arrows: {
+                    prev: '.glider-prev',
+                    next: '.glider-next'
+                }
+            });
+        });
+    </script>
+</body>
+</html>
